@@ -1,10 +1,11 @@
 import { Titular } from "./titular";
+import { IConta } from "../interfaces/conta.interface";
 
 export abstract class Conta {
-    private agencia: string;
-    private numero: string;
-    private titular: Titular;
-    protected saldo: number;
+    agencia: string;
+    numero: string;
+    titular: Titular;
+    saldo: number;
 
     constructor(agencia: string, numero: string, titular: Titular) {
         this.agencia = agencia;

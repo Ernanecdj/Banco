@@ -1,12 +1,14 @@
-export class Titular {
-    private nome: string;
-    private cpf: string;
-    private sexo: string;
-    private renda?: number
-    private dataNascimento: Date;
-    private endereco?: string;
-    private email?: string;
-    private telefone?: string;
+import { ITitular } from "../interfaces/titular.interfce";
+
+export class Titular implements ITitular {
+    nome: string;
+    cpf: string;
+    sexo: string;
+    renda?: number
+    dataNascimento: Date;
+    endereco?: string;
+    email?: string;
+    telefone?: string;
 
     constructor(nome: string, cpf: string, dataNascimento: Date, sexo: string) {
         this.nome = nome;
